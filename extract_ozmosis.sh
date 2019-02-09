@@ -1,0 +1,1 @@
+./bin/OZMTool --ozmextract --out ./oz_exteact --input ./rom/Z87XUD3H.10b-XMAX.rom

@@ -8,6 +8,8 @@
 #./OZMTool --ozmextract --out outputdir --input OZM.ROM
 #./OZMTool --ozmcreate --aggressivity 1 --compressdxe --kext kextdir --ffs ffsdir --efi efidir --dsdt DSDT.aml --out outputfile --input BIOS.ROM
 #./OZMTool --kext2ffs --out outputdir --input kextsdir
-#./OZMTool --dsdt2bios﻿ --input AmiBoardInfo.bin --dsdt DSDT.aml --out patchedAmiBoardInfo.bin
+#./OZMTool --dsdt2bios --input AmiBoardInfo.bin --dsdt DSDT.aml --out patchedAmiBoardInfo.bin
+
+
 current_time=$(date "+%Y%m%d%H%M%S")
-./bin/OZMTool --dsdtinject -i ./bios/Z87XUD3H_SM_20190208.10b -d ./bios/DSDT.aml -o ./output/rom/Z87XUD3H_SM_DSDT_$current_time.10b.rom
+./bin/OZMTool --dsdtinject -i ./bios/Z87XUD3H_SM_20190208.10b -d ./bios/DSDT.aml -o ./output/Z87XUD3H_SM_DSDT_$current_time.10b.rom
