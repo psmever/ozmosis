@@ -31,7 +31,7 @@
 		<key>LinuxRescueOptionTemplate</key>
 		<string>initrd=$initramfs root=$root ro quiet</string>
 		<key>TimeOut</key>
-		<integer>5</integer>
+		<integer>60</integer>
 		<key>UserInterface</key>
 		<true/>
 	</dict>
@@ -81,7 +81,7 @@
 	<key>Defaults:7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 	<dict>
 		<key>boot-args</key>
-		<string>-xcpm</string>
+		<string>-v -f kext-dev-mode=1</string>
 		<key>csr-active-config</key>
 		<integer>1023</integer>
 	</dict>
