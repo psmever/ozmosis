@@ -18,10 +18,16 @@
 		<string>$label</string>
 		<key>DarwinRecoveryDiskTemplate</key>
 		<string>$label ($platform.$major.$minor)</string>
+		<key>DisableAtiInjection</key>
+		<false/>
 		<key>DisableBootEntriesFilter</key>
+		<false/>
+		<key>DisableIntelInjection</key>
 		<false/>
 		<key>DisableNvidiaInjection</key>
 		<true/>
+		<key>DisableVoodooHda</key>
+		<false/>
 		<key>LinuxDiskOptionTemplate</key>
 		<string>initrd=$initfs root=UUID=$uuid ro</string>
 		<key>LinuxDiskTemplate</key>
@@ -81,7 +87,7 @@
 	<key>Defaults:7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 	<dict>
 		<key>boot-args</key>
-		<string>-v -f kext-dev-mode=1</string>
+		<string>nv_disable=1 dart=0 kext-dev-mode=1 -f -v slide=0</string>
 		<key>csr-active-config</key>
 		<integer>1023</integer>
 	</dict>
